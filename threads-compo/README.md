@@ -31,4 +31,30 @@ Running comiled version
     Bye!
     ...
 
-So ... Interpreted erlang via escript (not compiled) is slower than compiled version (what is obvious)... and is as slow as java (compiled ... what is also obvoius ;) which using native threads.
+So ... Interpreted erlang via escript (not compiled) is slower than
+compiled version (what is obvious)... and is as slow as java (compiled
+... what is also obvoius ;) which using native threads.
+
+### Java example
+
+Compiling:
+
+    $ javac Threads.java
+
+Executing:
+
+    $ java Threads
+
+Takes ~40 seconds on my machine.
+
+### C example
+
+Compiling:
+
+    $ gcc -Wall -lpthread threads.c -o threads
+
+Executing:
+
+    $ ./threads
+
+Takes 3-4 seconds on my machine.
