@@ -22,7 +22,7 @@
 %%
 %% Erlang tests was runned on:
 %%
-%%     MacBook White 2.1 GHz Core 2 Duo / 4GB / MacOSX 1.67
+%%     MacBook White 2.1 GHz Core 2 Duo / 4GB / MacOSX 10.6.7
 %%
 %% Erlang version:
 %%
