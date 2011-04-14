@@ -63,4 +63,4 @@ Executing:
 
     $ ./threads
 
-Takes 3-4 seconds on my machine.
+Takes 2 seconds on my machine.
