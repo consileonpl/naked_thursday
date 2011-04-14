@@ -1,6 +1,7 @@
 %%#!/usr/bin/env escript
 %%
 %% Running interpreded version via escript (uncommend first line for this test)
+%%
 %%     $./processes.erl
 %%     Process spawn time = 22961 ms
 %%     Bye!
@@ -17,10 +18,16 @@
 %%     Bye!
 %%     ...
 %%
-%% So ... Interpreted erlang via escript (not compiled) is slower
-%% than compiled version (what is obvious)... and is as slow
-%% as java (compiled ... what is also obvoius ;) which
-%% using native threads.
+%% So ... Interpreted erlang via escript (not compiled) is slower than compiled version (what is obvious)... and is as slow as java (compiled ... what is also obvoius ;) which using native threads.
+%%
+%% Erlang tests was runned on:
+%%
+%%     MacBook White 2.1 GHz Core 2 Duo / 4GB / MacOSX 10.6.7
+%%
+%% Erlang version:
+%%
+%%     Erlang R14B02 (erts-5.8.3) [source] [64-bit] [smp:2:2] [rq:2] [async-threads:0] [hipe] [kernel-poll:false]
+
 
 -module(processes).
 -export([main/1]).
