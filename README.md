@@ -14,3 +14,6 @@ Following are the rules of the contest:
  2. IDE usage prohibited. Only text editors allowed (Vim, Emacs,
  TextMate, Notepad++, etc.).
  3. Compilation/interpretation only via the shell.
+
+Competition tasks should cover language basic, and should not take
+more than 30 minutes to implement solution.
