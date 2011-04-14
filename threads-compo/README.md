@@ -1,8 +1,10 @@
-### Task
+## Task
 
 Create 100000 threads which displays "Hello world" and sleep for 1
-second. Measure the execution time in order to verify total costs of
+second. Measure the execution time in order to verify total cost of
 threads creation.
+
+## Results
 
 ### Ruby example
 To run the example call the following in console:
@@ -40,3 +42,27 @@ Erlang tests was runned on:
 Erlang version:
 
     Erlang R14B02 (erts-5.8.3) [source] [64-bit] [smp:2:2] [rq:2] [async-threads:0] [hipe] [kernel-poll:false]
+
+### Java example
+
+Compiling:
+
+    $ javac Threads.java
+
+Executing:
+
+    $ java Threads
+
+Takes ~40 seconds on my machine.
+
+### C example
+
+Compiling:
+
+    $ gcc -Wall -lpthread threads.c -o threads
+
+Executing:
+
+    $ ./threads
+
+Takes 2 seconds on my machine.
