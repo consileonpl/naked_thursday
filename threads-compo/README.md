@@ -66,3 +66,12 @@ Executing:
     $ ./threads
 
 Takes 2 seconds on my machine.
+
+## Results 2
+
+Results on i7 950, 3.07 GHZ, 6GB RAM
+
+ * C - 0m0.681s
+ * Java (1.6) - 0m32.061s
+ * Python - 0m49.133s
+ * Ruby (1.9.2) - 2m25.393s and cause exception: ``threads.rb:4:in `initialize': can't create Thread (11) (ThreadError)``
