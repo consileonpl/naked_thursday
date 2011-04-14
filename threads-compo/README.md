@@ -14,6 +14,7 @@ Running example on 100000 elements hanged up my PC _(ruby 1.8.7 patch 72)_, when
 ### Erlang version - both cases (compiled vs interpreted as escript)
 
 Running interpreded version via escript (uncommend first line for this test)
+
     $./processes.erl
     Process spawn time = 22961 ms
     Bye!
