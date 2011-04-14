@@ -1,6 +1,6 @@
 # Naked Thursday
 
-The Consileon's weekly contest comparing different aspects of
+The **Consileon's** weekly contest comparing different aspects of
 different programming languages.
 
 Contest objectives:
@@ -15,5 +15,6 @@ Following are the rules of the contest:
  TextMate, Notepad++, etc.).
  3. Compilation/interpretation only via the shell.
 
-Competition tasks should cover language basic, and should not take
-more than 30 minutes to implement solution.
+Competition tasks should cover language basics, and should not take
+more than 30 minutes to implement solution. Solutions should be
+implemented as simple as possible.
