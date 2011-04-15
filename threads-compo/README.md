@@ -7,11 +7,11 @@ threads creation.
 ## Results
 
 ### Ruby example
-To run the example call the following in console:
+To run the example (20k only) call the following in console:
 
-    ruby threads.rb
+    time ruby threads.rb
 
-Running example on 100000 elements hanged up my PC _(ruby 1.8.7 patch 72)_, when limited to 10000 threads it runs in 16 seconds.
+Running example on 100k elements hanged up my PC _(ruby 1.8.7 patch 72)_, when limited to 10k threads it runs in 16 seconds, for 20k it takes 125 seconds.
 
 ### Erlang version - both cases (compiled vs interpreted as escript)
 

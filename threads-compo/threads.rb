@@ -1,7 +1,12 @@
 require 'thread'
 
-(1..100000).each{|i|
+start = Time.now
+20000.times do
   Thread.new{
-    sleep(1000)
+    printf 'Bye!'
+    sleep(40000)
   }
-}
+  Thread.pass
+end
+diff = Time.now - start
+puts ' --- %d seconds --- ' % diff
