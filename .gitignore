@@ -3,3 +3,9 @@
 *#
 threads
 .#*
+target/
+
+*.iml
+*.ipr
+*.iws
+.idea/
