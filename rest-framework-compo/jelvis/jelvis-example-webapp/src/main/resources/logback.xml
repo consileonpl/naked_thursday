@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configuration>
-  <!-- Appenders -->
-  <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
-    <encoder>
-      <pattern>%d{HH:mm:ss.SSS} %-5level - %msg%n</pattern>
-    </encoder>
-  </appender>
+    <!-- Appenders -->
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level - %msg%n</pattern>
+        </encoder>
+    </appender>
 
-  <appender name="stdout-detail" class="ch.qos.logback.core.ConsoleAppender">
-    <encoder>
-      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
-    </encoder>
-  </appender>
+    <appender name="stdout-detail" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
 
-  <!-- Application Loggers -->
-  <logger name="pl.consileon.jelvis" level="debug" />
+    <!-- Application Loggers -->
+    <logger name="pl.consileon.jelvis" level="debug"/>
 
-  <!-- Root Logger -->
-  <root level="warn">
-    <appender-ref ref="stdout" />
-  </root>
+    <!-- Root Logger -->
+    <root level="warn">
+        <appender-ref ref="stdout"/>
+    </root>
 
 </configuration>

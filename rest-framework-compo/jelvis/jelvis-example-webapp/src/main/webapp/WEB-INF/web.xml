@@ -1,16 +1,16 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	version="2.5">
+         xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
 
-  <servlet>
-    <servlet-name>App Servlet</servlet-name>
-    <servlet-class>pl.consileon.jelvis.example.servlet.AppServlet</servlet-class>
-  </servlet>
+    <servlet>
+        <servlet-name>App Servlet</servlet-name>
+        <servlet-class>pl.consileon.jelvis.example.servlet.AppServlet</servlet-class>
+    </servlet>
 
-  <servlet-mapping>
-    <servlet-name>App Servlet</servlet-name>
-    <url-pattern>/users/*</url-pattern>
-  </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>App Servlet</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
 
 </web-app>

@@ -1,40 +1,41 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <artifactId>jelvis</artifactId>
+    <parent>
+        <artifactId>jelvis</artifactId>
+        <groupId>pl.consileon.jelvis</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <groupId>pl.consileon.jelvis</groupId>
+    <artifactId>jelvis-example-webapp</artifactId>
     <version>1.0-SNAPSHOT</version>
-  </parent>
+    <packaging>war</packaging>
+    <name>Jelvis :: Example Webapp</name>
 
-  <groupId>pl.consileon.jelvis</groupId>
-  <artifactId>jelvis-example-webapp</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <packaging>war</packaging>
-  <name>Jelvis :: Example Webapp</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>maven-jetty-plugin</artifactId>
+                <version>6.1.25</version>
+                <configuration>
+                    <contextPath>/</contextPath>
+                    <scanIntervalSeconds>3</scanIntervalSeconds>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.mortbay.jetty</groupId>
-        <artifactId>maven-jetty-plugin</artifactId>
-        <version>6.1.25</version>
-        <configuration>
-          <contextPath>/</contextPath>
-          <scanIntervalSeconds>3</scanIntervalSeconds>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-
-  <dependencies>
-    <dependency>
-      <groupId>pl.consileon.jelvis</groupId>
-      <artifactId>jelvis-core</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
-  </dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>pl.consileon.jelvis</groupId>
+            <artifactId>jelvis-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
